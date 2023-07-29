@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
+ 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(
+        88deg, 
+        hsl(263deg 100% 50%) 100%,
+        hsl(268deg 100% 50%) 100%,
+        hsl(273deg 100% 50%) 100%,
+        hsl(277deg 100% 50%) 100%,
+        hsl(289deg 100% 50%) 100%,
+        hsl(285deg 100% 35%) 33%,
+        hsl(288deg 100% 35%) 38%,
+        hsl(292deg 100% 35%) 64%,
+        hsl(295deg 100% 35%) 48%,
+        hsl(298deg 100% 35%) 52%,
+        hsl(301deg 100% 36%) 57%,
+        hsl(304deg 100% 38%) 62%, 
+        hsl(307deg 100% 39%) 88%,
+        hsl(309deg 100% 41%) 71%,
+        hsl(311deg 100% 43%) 76%,
+        hsl(313deg 100% 44%) 86%,
+        hsl(315deg 100% 46%) 86%,
+        hsl(316deg 100% 47%) 90%,
+        hsl(318deg 100% 49%) 95%,
+        hsl(319deg 100% 50%) 100%
+      );
+}
+
+.container {
+
+  background-color: orange;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 60px 30px 70px ;
+	height: 100%;
+	text-align: center;
+  border-radius: 10px;
+  width: 400px;
+  font-size: 20px;
+  font-weight: 599;
+}
+
+
+input {
+  background-color: white;
+	border: none;
+	padding: 12px 15px;
+	margin: 10px 0;
+	width: 100%;
+	border-radius: 22px;
+	font-weight: 700;
+}
+
+
+.my-signup-form {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+
+.my-login-form {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+button {
+  border-radius: 20px;
+	border: none;
+	background-color: rgb(29, 26, 26);
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 8px 20px ;
+	letter-spacing: 0.5px;
+	margin-top: 5%;
+  font-size: 16px;
+  font-weight: 599;
+}
+
+
