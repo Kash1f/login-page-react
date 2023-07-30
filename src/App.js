@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 
 const App = () => {
 
-  const [login, setLogin]=useState(true)
+  const [login, setLogin]=useState(true)   //using react hook useState to store the data
 
   const [email, setEmail]=useState('')
   const [password, setPassword]=useState('')
@@ -27,16 +27,13 @@ const App = () => {
     setPassword(event.target.value)
   }
 
-
   const handleClick=()=>{
     setLogin(!login)
   }
 
   return (
     <div className="App">
-
-          {login ? 
-
+          {login ?    //conditional rendering according to given task
             <div className='container'>
          <form className='my-signup-form'>
             <div>
@@ -55,9 +52,7 @@ const App = () => {
             <button onClick={handleClick}>Sign Up </button>
           </form>
             </div>
-
             : 
-
             <div className='container'>
               <form className='my-login-form'>
 
