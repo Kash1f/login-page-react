@@ -5,11 +5,11 @@ const App = () => {
 
   const [login, setLogin]=useState(true)   //using react hook useState to store the data
 
-  const [email, setEmail]=useState('')
-  const [password, setPassword]=useState('')
-  const [country, setCountry]=useState('')
   const [username, setUsername]=useState('')
-
+  const [email, setEmail]=useState('')
+  const [contact, setContact]=useState('')
+  const [password, setPassword]=useState('')
+  
 
   const handlechangeUsername=(event)=>{
     setUsername(event.target.value)
@@ -19,8 +19,8 @@ const App = () => {
     setEmail(event.target.value)
   }
 
-  const handlechangeCountry=(event)=>{
-    setCountry(event.target.value)
+  const handlechangeContact=(event)=>{
+    setContact(event.target.value)
   }
 
   const handlechangePassword=(event)=>{
@@ -33,8 +33,9 @@ const App = () => {
 
   return (
     <div className="App">
-          {login ?    //conditional rendering according to given task
+          {login ?    //conditional rendering page according to given task
             <div className='container'>
+
          <form className='my-signup-form'>
             <div>
               <label>Email: </label>
@@ -58,7 +59,7 @@ const App = () => {
 
               <div>
                 <label>Username: </label>
-                <input type='text' className='email' value={username} onChange={handlechangeUsername}/>
+                <input type='text' className='text' value={username} onChange={handlechangeUsername}/>
               </div>
               <div>
                 <label>Email: </label>
@@ -66,8 +67,8 @@ const App = () => {
               </div>
 
               <div>
-                <label>Country: </label>
-                <input type='text' className='email' value={country} onChange={handlechangeCountry}/>
+                <label>Contact: </label>
+                <input type='text' className='number' value={contact} onChange={handlechangeContact}/>
               </div>
 
               <div>
